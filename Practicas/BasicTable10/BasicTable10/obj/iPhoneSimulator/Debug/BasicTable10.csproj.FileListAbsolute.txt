@@ -1,0 +1,9 @@
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/bin/iPhoneSimulator/Debug/BasicTable10.exe
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/bin/iPhoneSimulator/Debug/BasicTable10.pdb
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_PartialAppManifest.items
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_BundleResourceWithLogicalName.items
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/obj/iPhoneSimulator/Debug/BasicTable10.csproj.CoreCompileInputs.cache
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/obj/iPhoneSimulator/Debug/BasicTable10.exe
+/Users/ISSC611/Documents/CRVISSC611/BasicTable10/BasicTable10/obj/iPhoneSimulator/Debug/BasicTable10.pdb

@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{29A87B69-8B36-4827-A2D8-7E7B6BB3D2FC}|Default">
+  <MonoDevelop.Ide.ItemProperties.BasicTable10 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6D2810EC-544D-44F1-8AF1-907B3AC771AD">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.BasicTable10>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicTable10/ViewController.cs">
+    <Files>
+      <File FileName="BasicTable10/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="BasicTable10/ViewController.cs" Line="76" Column="13" />
+      <File FileName="../PhotoPicker09/PhotoPicker09/ViewController.cs" Line="48" Column="14" />
+      <File FileName="BasicTable10/Main.cs" Line="12" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
