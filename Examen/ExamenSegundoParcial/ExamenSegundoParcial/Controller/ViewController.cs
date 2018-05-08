@@ -113,7 +113,7 @@ namespace ExamenSegundoParcial
 
         void SharedInstance_TweetsFetchedEvent(object sender, Resources.TweetsFetchedEventArgs e)
         {
-
+            TweetTable.ReloadData();
         }
 
         #endregion
