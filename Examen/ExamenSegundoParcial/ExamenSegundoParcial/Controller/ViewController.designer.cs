@@ -14,12 +14,20 @@ namespace ExamenSegundoParcial
 	{
 		[Outlet]
 		UIKit.UITableView TweetTable { get; set; }
+
+		[Outlet]
+		UIKit.UITableView TweetTableView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
 			if (TweetTable != null) {
 				TweetTable.Dispose ();
 				TweetTable = null;
+			}
+
+			if (TweetTableView != null) {
+				TweetTableView.Dispose ();
+				TweetTableView = null;
 			}
 		}
 	}

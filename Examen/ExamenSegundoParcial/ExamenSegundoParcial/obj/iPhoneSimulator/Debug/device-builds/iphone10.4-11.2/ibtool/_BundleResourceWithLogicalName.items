@@ -25,5 +25,25 @@
       <Optimize>false</Optimize>
       <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc/3NO-5u-76p-view-GdX-2s-FAo.nib/objects-11.0+.nib">
+      <LogicalName>Main.storyboardc/3NO-5u-76p-view-GdX-2s-FAo.nib/objects-11.0+.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc/3NO-5u-76p-view-GdX-2s-FAo.nib/runtime.nib">
+      <LogicalName>Main.storyboardc/3NO-5u-76p-view-GdX-2s-FAo.nib/runtime.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc/UINavigationController-qxF-yC-OVw.nib/objects-11.0+.nib">
+      <LogicalName>Main.storyboardc/UINavigationController-qxF-yC-OVw.nib/objects-11.0+.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc/UINavigationController-qxF-yC-OVw.nib/runtime.nib">
+      <LogicalName>Main.storyboardc/UINavigationController-qxF-yC-OVw.nib/runtime.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
   </ItemGroup>
 </Project>

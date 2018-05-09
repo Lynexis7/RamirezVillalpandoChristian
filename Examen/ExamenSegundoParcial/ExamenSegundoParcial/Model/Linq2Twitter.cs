@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using LinqToTwitter;
 
-namespace ExamenSegundoParcial.Resources
+namespace ExamenSegundoParcial.Model
 {
     public class Linq2Twitter
     {
         #region Singleton
 
         static Lazy<Linq2Twitter> lazy = new Lazy<Linq2Twitter>(() => new Linq2Twitter());
-        public Linq2Twitter SharedInstance
+        public static Linq2Twitter SharedInstance
         {
             get => lazy.Value;
         }
@@ -16,8 +20,8 @@ namespace ExamenSegundoParcial.Resources
 
         #region Events
 
-        public EventHandler TweetsFetchedEventArgs;
-        public EventHandler FetchedTweetsFailedEventArgs;
+        public event EventHandler<TweetsFetchedEventArgs> TweetsFetchedEvent;
+        public event EventHandler<FetchedTweetsFailedEventArgs> FetchedTweetsFailedEvent;
 
         #endregion
 
@@ -25,6 +29,8 @@ namespace ExamenSegundoParcial.Resources
         #region Class Variables
 
         SingleUserAuthorizer auth;
+        TwitterContext twitterContext;
+        CancellationTokenSource cancellationTokenSource;
 
         #endregion
 
@@ -40,40 +46,91 @@ namespace ExamenSegundoParcial.Resources
                     ConsumerSecret = "w1hFnHo2H5FEAfr5qRuZyLrctkDvMq9wkMUOe0SJjUr7L1TPGm"
                 },
             };
+            twitterContext = new TwitterContext(auth);
+            cancellationTokenSource = new CancellationTokenSource();
         }
 
         #endregion
 
         #region Internal Functionality
 
+        async Task<List<Status>> SearchTweetsAsync(string query, CancellationToken cancellationToken)
+        {
+            if (string.IsNullOrWhiteSpace((query)))
+                return null;
 
+            cancellationToken.ThrowIfCancellationRequested();
+
+            Search searchResponse =
+                await
+                (from search in twitterContext.Search
+                 where search.Type == SearchType.Search &&
+                       search.Query == query &&
+                       search.IncludeEntities == true &&
+                       search.TweetMode == TweetMode.Extended
+                 select search)
+                .SingleOrDefaultAsync();
+
+            cancellationToken.ThrowIfCancellationRequested();
+            return searchResponse?.Statuses;
+        }
 
         #endregion
 
-    }
+        #region Public Functionality
 
-    public class TweetsFetchedEventArgs : EventArgs {
-        public object Tweets
+            public void SearchTweets (string query) {
+            if (cancellationTokenSource.IsCancellationRequested)
+                cancellationTokenSource.Cancel();
+
+            cancellationTokenSource = new CancellationTokenSource();
+            var cancellationToken = cancellationTokenSource.Token;
+
+            Task.Factory.StartNew(async () =>
+            {
+                try
+                {
+                    var tweets = await SearchTweetsAsync(query, cancellationToken);
+
+                    var e = new TweetsFetchedEventArgs(tweets);
+                    TweetsFetchedEvent?.Invoke(this, e);
+                }
+                catch (Exception ex)
+                {
+                    var e = new FetchedTweetsFailedEventArgs(ex.Message);
+                    FetchedTweetsFailedEvent?.Invoke(this, e);
+                }
+            });
+            }
+
+        #endregion
+
+        public class TweetsFetchedEventArgs : EventArgs
         {
-            get;
-            set;
+            public List<Status> Tweets
+            {
+                get;
+                set;
+            }
+
+            public TweetsFetchedEventArgs(List<Status> tweets)
+            {
+                Tweets = tweets;
+            }
         }
 
-        public TweetsFetchedEventArgs(object tweets) {
-            Tweets = tweets;
-        }
-    }
-
-    public class FetchedTweetsFailedEventArgs : EventArgs
-    {
-        public string Message
+        public class FetchedTweetsFailedEventArgs : EventArgs
         {
-            get;
-            set;
-        }
+            public string Message
+            {
+                get;
+                set;
+            }
 
-        public FetchedTweetsFailedEventArgs(string errorMessage) {
-            Message = errorMessage;
+            public FetchedTweetsFailedEventArgs(string errorMessage)
+            {
+                Message = errorMessage;
+            }
         }
     }
 }

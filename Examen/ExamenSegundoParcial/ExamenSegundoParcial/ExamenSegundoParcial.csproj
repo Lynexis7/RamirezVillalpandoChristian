@@ -140,11 +140,11 @@
     <Compile Include="Views\TweetTableViewCell.designer.cs">
       <DependentUpon>TweetTableViewCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\LinqToTwitterManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\icons8-corazones-30.png" />
     <BundleResource Include="Resources\icons8-retweet-30.png" />
-    <BundleResource Include="Model\Linq2Twitter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

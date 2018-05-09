@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using ExamenSegundoParcial.Model;
-using ExamenSegundoParcial.Resources;
 using ExamenSegundoParcial.Views;
 using Foundation;
 using LinqToTwitter;
@@ -17,7 +15,6 @@ namespace ExamenSegundoParcial
 
         UISearchController searchController;
         List<Status> tweets;
-        Linq2Twitter lq;
 
         #endregion
 
@@ -40,56 +37,51 @@ namespace ExamenSegundoParcial
             // Release any cached data, images, etc that aren't in use.
         }
 
-
-        #region User Interactions
-
-
-
-        #endregion
-
-        #region UITableView data Source
-
-        [Export("numberOfSectionsInTableView:")]
-        public nint NumberOfSections(UITableView tableView)
-        {
-            return 1;
-        }
-
-        public UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
-        {
-            var tweet = tweets[indexPath.Row];
-            var cell = tableView.DequeueReusableCell(TweetTableViewCell.Key, indexPath) as TweetTableViewCell;
-            cell.Tweet = tweet.FullText;
-            cell.Favorited = tweet.Favorited.ToString() ?? "0";
-            cell.Retweeted = tweet.Retweeted.ToString();
-            return cell;
-        }
-
-        public nint RowsInSection(UITableView tableView, nint section)
-        {
-            return 20;
-        }
-
-        #endregion
-
-
-
         #region Internal Functionality
 
         void InitializeComponents()
         {
-            lq.SharedInstance.FetchedTweetsFailedEvent += SharedInstance_FetchedTweetsFailedEvent;
-            lq.SharedInstance.TweetsFetchedEvent += SharedInstance_TweetsFetchedEvent;
+
+            tweets = new List<Status>();
+            LinqToTwitterManager.SharedInstance.TweetsFetchedEvent += SharedInstance_TweetsFetchedEvent1;
+            LinqToTwitterManager.SharedInstance.FetchedTweetsFailedEvent += SharedInstance_FetchedTweetsFailedEvent1;
 
             searchController = new UISearchController(searchResultsController: null)
             {
                 SearchResultsUpdater = this,
                 DimsBackgroundDuringPresentation = false
             };
-            TweetTable.DataSource = this;
-            TweetTable.Delegate = this;
-            TweetTable.TableHeaderView = searchController.SearchBar;
-            //TweetTable.RowHeight = UITableView.
+            TweetTableView.DataSource = this;
+            TweetTableView.Delegate = this;
+            TweetTableView.TableHeaderView = searchController.SearchBar;
+            TweetTableView.RowHeight = UITableView.AutomaticDimension;
+            TweetTableView.EstimatedRowHeight = 50;
+        }
+
+        #endregion
+
+
+        #region UITableView data Source
+
+        [Export("numberOfSectionsInTableView:")]
+        public  nint NumberOfSections(UITableView tableView)
+        {
+            return 1;
+        }
+
+        public  UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
+        {
+            var tweet = tweets[indexPath.Row];
+            var cell = tableView.DequeueReusableCell(TweetTableViewCell.Key, indexPath) as TweetTableViewCell;
+            cell.Tweet = tweet.FullText;
+            cell.Favorited = tweet.FavoriteCount.ToString() ?? "0";
+            cell.Retweeted = tweet.RetweetCount.ToString();
+            return cell;
+        }
+
+        public  nint RowsInSection(UITableView tableView, nint section)
+        {
+            return tweets.Count;
         }
 
         #endregion
@@ -99,25 +91,26 @@ namespace ExamenSegundoParcial
 
         public void UpdateSearchResultsForSearchController(UISearchController searchController)
         {
-            lq.SharedInstance.SearchTweets(searchController.SearchBar.Text);
+            if(searchController.SearchBar.Text != "")
+                LinqToTwitterManager.SharedInstance.SearchTweets(searchController.SearchBar.Text);
         }
 
         #endregion
 
         #region Linq Events
 
-        void SharedInstance_FetchedTweetsFailedEvent(object sender, Resources.FetchedTweetsFailedEventArgs e)
+        void SharedInstance_TweetsFetchedEvent1(object sender, Model.LinqToTwitterManager.TweetsFetchedEventArgs e)
         {
-
+            tweets = e.Tweets;
+            InvokeOnMainThread(() => TweetTableView.ReloadData());
         }
 
-        void SharedInstance_TweetsFetchedEvent(object sender, Resources.TweetsFetchedEventArgs e)
+        void SharedInstance_FetchedTweetsFailedEvent1(object sender, Model.LinqToTwitterManager.FetchedTweetsFailedEventArgs e)
         {
-            TweetTable.ReloadData();
+            Console.WriteLine(e.Message);
         }
 
         #endregion
-
 
     }
 }
