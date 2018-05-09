@@ -11,9 +11,11 @@
 
 @interface ViewController : UIViewController {
 	UITableView *_TweetTable;
+	UITableView *_TweetTableView;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *TweetTable;
-@property (weak, nonatomic) IBOutlet UITableView *TweetTableView;
+
+@property (nonatomic, retain) IBOutlet UITableView *TweetTableView;
 
 @end

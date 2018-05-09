@@ -10,5 +10,6 @@
 @implementation ViewController
 
 @synthesize TweetTable = _TweetTable;
+@synthesize TweetTableView = _TweetTableView;
 
 @end

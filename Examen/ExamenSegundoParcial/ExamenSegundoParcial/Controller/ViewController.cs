@@ -71,17 +71,48 @@ namespace ExamenSegundoParcial
 
         public  UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            var tweet = tweets[indexPath.Row];
-            var cell = tableView.DequeueReusableCell(TweetTableViewCell.Key, indexPath) as TweetTableViewCell;
-            cell.Tweet = tweet.FullText;
-            cell.Favorited = tweet.FavoriteCount.ToString() ?? "0";
-            cell.Retweeted = tweet.RetweetCount.ToString();
-            return cell;
+            try
+            {
+                if (tweets.Count > 0)
+                {
+                    var tweet = tweets[indexPath.Row];
+                    var cell = tableView.DequeueReusableCell(TweetTableViewCell.Key, indexPath) as TweetTableViewCell;
+                    cell.Tweet = tweet.FullText;
+                    cell.Favorited = tweet.FavoriteCount.ToString() ?? "0";
+                    cell.Retweeted = tweet.RetweetCount.ToString();
+                    return cell;
+                }
+                else
+                {
+                    var tweet = tweets[indexPath.Row];
+                    var cell = tableView.DequeueReusableCell(TweetTableViewCell.Key, indexPath) as TweetTableViewCell;
+                    cell.Tweet = "";
+                    cell.Favorited = "";
+                    cell.Retweeted = "";
+                    return cell;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+
         }
 
         public  nint RowsInSection(UITableView tableView, nint section)
         {
-            return tweets.Count;
+            try
+            {
+                return tweets.Count;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
+            }
+
         }
 
         #endregion
