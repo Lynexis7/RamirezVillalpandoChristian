@@ -1,0 +1,45 @@
+Function=xamarin_timezone_get_data
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Xamarin.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDatabaseReference
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDataSnapshot
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMutableData
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDatabase
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDatabaseQuery
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRServerValue
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRTransactionResult
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAnalyticsConfiguration
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRApp
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRConfiguration
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROptions
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Core.dll
+Field=kFIRInstanceIDScopeFirebaseMessaging
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.InstanceID.dll
+Field=kFIRInstanceIDTokenRefreshNotification
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.InstanceID.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRInstanceID
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.InstanceID.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAnalytics
+	/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.0/mtouch-cache/Link/Firebase.Analytics.dll
+Function=mono_pmip
+Function=xamarin_dyn_objc_msgSend
+Function=xamarin_dyn_objc_msgSendSuper
+Function=xamarin_dyn_objc_msgSend_stret
+Function=xamarin_dyn_objc_msgSendSuper_stret

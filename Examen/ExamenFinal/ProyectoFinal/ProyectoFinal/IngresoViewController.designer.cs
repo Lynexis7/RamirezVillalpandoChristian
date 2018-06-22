@@ -23,27 +23,30 @@ namespace ProyectoFinal
 
 		[Outlet]
 		UIKit.UITextField txtMonto { get; set; }
+
+		[Action ("btnGuardar:")]
+		partial void btnGuardar (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (btnGuardarIngreso != null) {
-				btnGuardarIngreso.Dispose ();
-				btnGuardarIngreso = null;
-			}
-
 			if (btnCancelar != null) {
 				btnCancelar.Dispose ();
 				btnCancelar = null;
 			}
 
-			if (txtMonto != null) {
-				txtMonto.Dispose ();
-				txtMonto = null;
+			if (btnGuardarIngreso != null) {
+				btnGuardarIngreso.Dispose ();
+				btnGuardarIngreso = null;
 			}
 
 			if (txtDescripcion != null) {
 				txtDescripcion.Dispose ();
 				txtDescripcion = null;
+			}
+
+			if (txtMonto != null) {
+				txtMonto.Dispose ();
+				txtMonto = null;
 			}
 		}
 	}

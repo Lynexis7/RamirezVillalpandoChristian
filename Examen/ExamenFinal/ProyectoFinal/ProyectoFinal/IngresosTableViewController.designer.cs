@@ -12,9 +12,15 @@ namespace ProyectoFinal
 	[Register ("IngresosTableViewController")]
 	partial class IngresosTableViewController
 	{
+		[Outlet]
+		UIKit.UITableView IncomeTable { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (IncomeTable != null) {
+				IncomeTable.Dispose ();
+				IncomeTable = null;
+			}
 		}
 	}
 }

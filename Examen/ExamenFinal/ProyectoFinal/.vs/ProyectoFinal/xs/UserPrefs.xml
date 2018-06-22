@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{4BFFBF04-9918-43FC-A92A-5C2EC4869B7E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProyectoFinal/IngresoViewController.cs">
+    <Files>
+      <File FileName="ProyectoFinal/AppDelegate.cs" Line="60" Column="1" />
+      <File FileName="ProyectoFinal/IngresoViewController.cs" Line="39" Column="1" />
+      <File FileName="ProyectoFinal/GastoViewController.cs" Line="46" Column="1" />
+      <File FileName="ProyectoFinal/IngresosTableViewController.cs" Line="82" Column="1" />
+      <File FileName="ProyectoFinal/GastosTableViewController.cs" Line="78" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/IngresoViewController.cs" relfile="ProyectoFinal/IngresoViewController.cs" line="53" column="1" />
+      <Breakpoint file="/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/IngresoViewController.cs" relfile="ProyectoFinal/IngresoViewController.cs" line="66" column="1" />
+      <Breakpoint file="/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/IngresoViewController.cs" relfile="ProyectoFinal/IngresoViewController.cs" line="38" column="1" />
+      <Breakpoint file="/Users/christianramirezvillalpando/Documents/GitHub/RamirezVillalpandoChristian/Examen/ExamenFinal/ProyectoFinal/ProyectoFinal/IngresoViewController.cs" relfile="ProyectoFinal/IngresoViewController.cs" line="33" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ProyectoFinal PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EDEDC6DD-7958-4A4C-846D-AEA9766EBD14">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.ProyectoFinal>
+</Properties>

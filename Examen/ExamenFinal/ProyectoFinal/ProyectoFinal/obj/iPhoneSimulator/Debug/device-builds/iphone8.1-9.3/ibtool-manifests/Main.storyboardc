@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.ibtool.document.errors</key>
+	<dict/>
+	<key>com.apple.ibtool.document.notices</key>
+	<dict/>
+	<key>com.apple.ibtool.document.warnings</key>
+	<dict>
+		<key>E9E-Qv-ZLq</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>E9E-Qv-ZLq</string>
+				</array>
+				<key>message</key>
+				<string>Modal segues are deprecated since iOS 8.0</string>
+				<key>type</key>
+				<string>IBDeprecated</string>
+				<key>type-value</key>
+				<integer>7</integer>
+			</dict>
+		</array>
+		<key>OVx-qp-sGZ</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>OVx-qp-sGZ</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>hoM-fK-8aO</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>hoM-fK-8aO</string>
+				</array>
+				<key>message</key>
+				<string>Modal segues are deprecated since iOS 8.0</string>
+				<key>type</key>
+				<string>IBDeprecated</string>
+				<key>type-value</key>
+				<integer>7</integer>
+			</dict>
+		</array>
+		<key>yDL-10-dVd</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>yDL-10-dVd</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

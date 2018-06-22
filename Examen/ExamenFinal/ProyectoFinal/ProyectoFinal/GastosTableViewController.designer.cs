@@ -12,9 +12,15 @@ namespace ProyectoFinal
 	[Register ("GastosTableViewController")]
 	partial class GastosTableViewController
 	{
+		[Outlet]
+		UIKit.UITableView OutcomeTable { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (OutcomeTable != null) {
+				OutcomeTable.Dispose ();
+				OutcomeTable = null;
+			}
 		}
 	}
 }
